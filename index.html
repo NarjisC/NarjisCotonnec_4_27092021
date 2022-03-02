@@ -23,7 +23,6 @@
       </div>
 
       <div class="navbar">
-
         <a class="icon" onclick="editNav()">
           <i class="fa fa-bars fa-lg"></i>
         </a>
@@ -49,7 +48,6 @@
             <span>Évènements passés</span>
           </a>
         </div>
-
       </div>
     </div>
 
@@ -92,10 +90,13 @@
                 <input
                   class="text-control"
                   type="text"
-                  id="first"
-                  name="first"
-                  minlength="2"
+                  id="firstname"
+                  name="firstname"
                 /><br />
+                <span class="firstErrorMsg hidden"
+                  >Veuillez entrer 2 caractères ou plus pour le champ du
+                  prénom</span
+                >
               </div>
 
               <div class="formData">
@@ -103,9 +104,13 @@
                 <input
                   class="text-control"
                   type="text"
-                  id="last"
-                  name="last"
+                  id="lastname"
+                  name="lastname"
                 /><br />
+                <span class="hidden lastErrorMsg"
+                  >Veuillez entrer 2 caractères ou plus pour le champ du
+                  nom</span
+                >
               </div>
 
               <div class="formData">
@@ -116,6 +121,9 @@
                   id="email"
                   name="email"
                 /><br />
+                <span class="hidden emailErrorMsg"
+                  >Veuillez entrer un email valide</span
+                >
               </div>
 
               <div class="formData">
@@ -126,6 +134,9 @@
                   id="birthdate"
                   name="birthdate"
                 /><br />
+                <span class="hidden ageErrorMsg"
+                  >Vous devez entrer votre date de naissance</span
+                >
               </div>
 
               <div class="formData">
@@ -141,6 +152,9 @@
                   min="0"
                   max="99"
                 />
+                <span class="hidden tournamentErrorMsg"
+                  >Vous devez choisir une option.</span
+                >
               </div>
 
               <p class="text-label">Quelles villes ?</p>
@@ -217,6 +231,9 @@
                   <span class="checkbox-icon"></span>
                   Portland
                 </label>
+                <span class="hidden tournamentCityErrorMsg"
+                  >Vous devez choisir une option</span
+                >
               </div>
 
               <div class="formData">
@@ -238,6 +255,9 @@
                   Je souhaite être prévenu des prochains évènements.
                 </label>
                 <br />
+                <span class="hidden termsCheckMsg"
+                  >Vous devez accepté les conditions d'utilisation</span
+                >
               </div>
 
               <input
